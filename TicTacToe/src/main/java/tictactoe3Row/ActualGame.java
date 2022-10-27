@@ -1,19 +1,13 @@
-
 package tictactoe3Row;
-
 import java.util.*;
-
 public class ActualGame {
-
     Map<Integer, String> gameMap = new HashMap<>();
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-
         ActualGame that = (ActualGame) o;
-
         return Objects.equals(gameMap, that.gameMap);
     }
 
@@ -22,6 +16,7 @@ public class ActualGame {
         return gameMap != null ? gameMap.hashCode() : 0;
     }
 
+    DifficultyLevel difficultyLevel =new DifficultyLevel();
     Players players = new Players();
     GameRun gameRun = new GameRun();
     Visual visual = new Visual();
@@ -32,10 +27,9 @@ public class ActualGame {
         return new Scanner(System.in).nextInt();
     }
 
-
     public void manage1Players3x3() {
         String witchXOSign = "";
-        int mapSize=9;
+        int mapSize = 9;
 
         for (int i = 0; i < mapSize; i++) {
 
@@ -48,10 +42,8 @@ public class ActualGame {
                 witchXOSign = players.signForPlayerO();
                 givenNumber = randomGenerator.nextInt(10);
             }
-
-
             try {
-                actualGame(givenNumber, witchXOSign,  mapSize);
+                actualGame(givenNumber, witchXOSign, mapSize);
             } catch (BadNumberException e) {
                 i--;
             } catch (GameEndingByWiningException e) {
@@ -63,12 +55,11 @@ public class ActualGame {
         }
     }
 
-
     public void manage2Players3x3() {
         String witchXOSign = "";
-        int mapSize=9;
+        int mapSize = 9;
 
-        for (int i = 0; i <  mapSize; i++) {
+        for (int i = 0; i < mapSize; i++) {
 
             if (i % 2 == 0) {
                 players.announcementForPlayerX();
@@ -78,37 +69,6 @@ public class ActualGame {
                 witchXOSign = players.signForPlayerO();
             }
             int givenNumber = getInt();
-
-            try {
-                actualGame(givenNumber, witchXOSign,  mapSize);
-            } catch (BadNumberException e) {
-                i--;
-            } catch (GameEndingByWiningException e) {
-                System.out.println(e.anoucment + witchXOSign);
-                break;
-            } catch (DrawException e) {
-            System.out.println(e);
-        }
-        }
-    }
-
-
-    public void manage1Players10x10() {
-        String witchXOSign = "";
-        int mapSize=100;
-
-        for (int i = 0; i < mapSize; i++) {
-
-            int givenNumber;
-            if (i % 2 == 0) {
-                players.announcementForPlayerX();
-                witchXOSign = players.signForPlayerX();
-                givenNumber = getInt();
-            } else {
-                witchXOSign = players.signForPlayerO();
-                givenNumber = randomGenerator.nextInt(100);
-            }
-
 
             try {
                 actualGame(givenNumber, witchXOSign, mapSize);
@@ -124,10 +84,40 @@ public class ActualGame {
     }
 
 
+    public void manage1Players10x10( int choiceDifficultyLevel) {
+        String witchXOSign = "";
+        int mapSize = 100;
+
+        for (int i = 0; i < mapSize; i++) {
+
+            int givenNumber;
+            if (i % 2 == 0) {
+                players.announcementForPlayerX();
+                witchXOSign = players.signForPlayerX();
+                givenNumber = getInt();
+            } else {
+                witchXOSign = players.signForPlayerO();
+                givenNumber = difficultyLevel.allocationDifficultyLevel(choiceDifficultyLevel, gameMap);
+                System.out.println("");
+            }
+
+            try {
+                actualGame(givenNumber, witchXOSign, mapSize);
+            } catch (BadNumberException e) {
+                i--;
+            } catch (GameEndingByWiningException e) {
+                System.out.println(e.anoucment + witchXOSign);
+                break;
+            } catch (DrawException e) {
+                System.out.println(e);
+            }
+        }
+    }
+
 
     public void manage2Players10x10() {
         String witchXOSign = "";
-        int mapSize=100;
+        int mapSize = 100;
 
         for (int i = 0; i < 100; i++) {
 
@@ -141,7 +131,7 @@ public class ActualGame {
             int givenNumber = getInt();
 
             try {
-                actualGame(givenNumber, witchXOSign,  mapSize);
+                actualGame(givenNumber, witchXOSign, mapSize);
             } catch (BadNumberException e) {
                 i--;
             } catch (GameEndingByWiningException e) {
@@ -153,41 +143,34 @@ public class ActualGame {
         }
     }
 
-
-
-
-    public Map<Integer, String> actualGame(int givenNumber, String witchXOSign, int  mapSize) throws BadNumberException, DrawException, GameEndingByWiningException {
+    public Map<Integer, String> actualGame(int givenNumber, String witchXOSign, int mapSize) throws BadNumberException, DrawException, GameEndingByWiningException {
         try {
             gameMap = gameRun.numberGettingAndVerification(gameMap, givenNumber, witchXOSign, mapSize);
         } catch (BadNumberException e) {
             throw new BadNumberException();
         }
-        if (mapSize==9) {
+        if (mapSize == 9) {
             visual.draw3x3(gameMap);
-        } else  if (mapSize==100) {
+        } else if (mapSize == 100) {
             visual.draw10x10(gameMap);
         }
 
-
-        if (mapSize==9) {
+        if (mapSize == 9) {
             try {
                 winingCalculation.winingnSign3x3(gameMap);
             } catch (GameEndingByWiningException e) {
                 throw new GameEndingByWiningException();
             }
-        } else if (mapSize==100) {
+        } else if (mapSize == 100) {
             try {
                 winingCalculation.winingnSign10x10(gameMap);
             } catch (GameEndingByWiningException e) {
                 throw new GameEndingByWiningException();
             }
         }
-
-        try {
-            if (gameMap.size() ==  mapSize) {
-                throw new DrawException();
-            }
-            }catch ( DrawException e){
-            }return  gameMap;
+        if (gameMap.size() == mapSize) {
+            throw new DrawException();
         }
+        return gameMap;
     }
+}

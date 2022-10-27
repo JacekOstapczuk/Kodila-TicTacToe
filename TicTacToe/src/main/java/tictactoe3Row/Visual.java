@@ -108,7 +108,7 @@ public class Visual {
         for (int j = 0; j <= 99; j++) {
             if (gameMap.containsKey(j)) {
                 String space = (String) gameMap.get(j);
-                XOlist.add(j, space);
+                XOlist.add(j-1, space);
             }
         }
 

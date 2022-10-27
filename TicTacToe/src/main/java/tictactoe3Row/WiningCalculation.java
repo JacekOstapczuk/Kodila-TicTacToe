@@ -1,5 +1,3 @@
-
-
 package tictactoe3Row;
 
 import java.util.ArrayList;

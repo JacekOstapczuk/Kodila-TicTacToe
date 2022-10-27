@@ -5,8 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f70282d7-a04b-4089-b51c-f8afe0905b16" name="Changes" comment="10.0  Almost Finished Game">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TicTacToe/src/main/java/tictactoe3Row/DifficultyLevel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TicTacToe/src/main/java/tictactoe3Row/Rankingi.list" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TicTacToe/src/main/java/tictactoe3Row/Run.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TicTacToe/src/main/java/tictactoe3Row/ActualGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/TicTacToe/src/main/java/tictactoe3Row/ActualGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TicTacToe/src/main/java/tictactoe3Row/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/TicTacToe/src/main/java/tictactoe3Row/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TicTacToe/src/main/java/tictactoe3Row/Visual.java" beforeDir="false" afterPath="$PROJECT_DIR$/TicTacToe/src/main/java/tictactoe3Row/Visual.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TicTacToe/src/main/java/tictactoe3Row/WiningCalculation.java" beforeDir="false" afterPath="$PROJECT_DIR$/TicTacToe/src/main/java/tictactoe3Row/WiningCalculation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +25,13 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -25,20 +39,26 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2G5vWlm4xF35bB6NYDsn29uQNiH" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/programowanie/KursKodilla/Kodila-TicTacToe/TicTacToe/src/main/java&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/programowanie/KursKodilla/kodilla-course&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -49,7 +69,7 @@
       <recent name="tictactoe3Row" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.ActualGameTest">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="tictactoe3Row.Main" />
       <module name="Kodila-TicTacToe.TicTacToe.main" />
@@ -86,8 +106,32 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="ActualGameTest.Draw" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":TicTacToe:test" />
+            <option value="--tests" />
+            <option value="&quot;tictactoe3Row.ActualGameTest.Draw&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.ActualGameTest.Draw" />
         <item itemvalue="Gradle.ActualGameTest" />
         <item itemvalue="Application.Main" />
       </list>
@@ -103,6 +147,19 @@
       <updated>1665691292485</updated>
       <workItem from="1665691294440" duration="1501000" />
       <workItem from="1665692842964" duration="164000" />
+      <workItem from="1665693131726" duration="463000" />
+      <workItem from="1665693610549" duration="121000" />
+      <workItem from="1665693755191" duration="38000" />
+      <workItem from="1665726621418" duration="1628000" />
+      <workItem from="1666080289637" duration="661000" />
+      <workItem from="1666195069378" duration="8924000" />
+      <workItem from="1666244964796" duration="859000" />
+      <workItem from="1666335229491" duration="614000" />
+      <workItem from="1666340233259" duration="30000" />
+      <workItem from="1666430431972" duration="4031000" />
+      <workItem from="1666438230199" duration="623000" />
+      <workItem from="1666516887058" duration="1610000" />
+      <workItem from="1666808159233" duration="1756000" />
     </task>
     <task id="LOCAL-00001" summary="Commit">
       <created>1665691318368</created>
@@ -125,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665692786215</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="10.0  Almost Finished Game">
+      <created>1665693361595</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1665693361595</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
