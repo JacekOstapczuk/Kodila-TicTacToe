@@ -1,4 +1,4 @@
-package tictactoe3Row;
+package tictactoe;
 
 import java.util.Scanner;
 
@@ -13,7 +13,7 @@ public void run (){
     int choicePlayersQuantity = getInt();
 
     if (choicePlayersQuantity==1 && choiceSizeOfTable==2){
-        System.out.println("Wybierz poziom trudności: \n 1 - B.Latwy  \n 2 - Latwy \n 3 - Średni  \n 4 - Trudny");
+        System.out.println("Wybierz poziom trudności: \n 1 - B.Latwy  \n 2 - Latwy \n 3 - Średni  \n 4 - Trudny  \n 5 - B.Trudny ");
         choiceDifficultyLevel = getInt();
     }
 

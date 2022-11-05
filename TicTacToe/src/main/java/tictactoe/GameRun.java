@@ -1,6 +1,6 @@
 
 
-package tictactoe3Row;
+package tictactoe;
 
 import java.util.Map;
 import java.util.Scanner;

@@ -1,4 +1,4 @@
-package tictactoe3Row;
+package tictactoe;
 import java.util.*;
 public class ActualGame {
     Map<Integer, String> gameMap = new HashMap<>();

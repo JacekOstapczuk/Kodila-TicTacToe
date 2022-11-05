@@ -1,4 +1,4 @@
-package tictactoe3Row;
+package tictactoe;
 
 import java.util.ArrayList;
 import java.util.List;

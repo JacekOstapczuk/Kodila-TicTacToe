@@ -1,4 +1,4 @@
-package tictactoe3Row;
+package tictactoe;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

@@ -1,5 +1,5 @@
 
-package tictactoe3Row;
+package tictactoe;
 
 public class BadNumberException  extends Exception {
 

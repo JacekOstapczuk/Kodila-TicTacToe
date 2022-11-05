@@ -4,16 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f70282d7-a04b-4089-b51c-f8afe0905b16" name="Changes" comment="10.0  Almost Finished Game">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TicTacToe/src/main/java/tictactoe3Row/DifficultyLevel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TicTacToe/src/main/java/tictactoe3Row/Rankingi.list" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TicTacToe/src/main/java/tictactoe3Row/Run.java" afterDir="false" />
+    <list default="true" id="f70282d7-a04b-4089-b51c-f8afe0905b16" name="Changes" comment="12.1  Almost Finished Game ;)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TicTacToe/src/main/java/tictactoe3Row/ActualGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/TicTacToe/src/main/java/tictactoe3Row/ActualGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TicTacToe/src/main/java/tictactoe3Row/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/TicTacToe/src/main/java/tictactoe3Row/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TicTacToe/src/main/java/tictactoe3Row/Visual.java" beforeDir="false" afterPath="$PROJECT_DIR$/TicTacToe/src/main/java/tictactoe3Row/Visual.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TicTacToe/src/main/java/tictactoe3Row/WiningCalculation.java" beforeDir="false" afterPath="$PROJECT_DIR$/TicTacToe/src/main/java/tictactoe3Row/WiningCalculation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TicTacToe/src/main/java/tictactoe3Row/ActualGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/TicTacToe/src/main/java/tictactoe/ActualGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TicTacToe/src/main/java/tictactoe3Row/BadNumberException.java" beforeDir="false" afterPath="$PROJECT_DIR$/TicTacToe/src/main/java/tictactoe/BadNumberException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TicTacToe/src/main/java/tictactoe3Row/DifficultyLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/TicTacToe/src/main/java/tictactoe/DifficultyLevel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TicTacToe/src/main/java/tictactoe3Row/DrawException.java" beforeDir="false" afterPath="$PROJECT_DIR$/TicTacToe/src/main/java/tictactoe/DrawException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TicTacToe/src/main/java/tictactoe3Row/GameEndingByWiningException.java" beforeDir="false" afterPath="$PROJECT_DIR$/TicTacToe/src/main/java/tictactoe/GameEndingByWiningException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TicTacToe/src/main/java/tictactoe3Row/GameRun.java" beforeDir="false" afterPath="$PROJECT_DIR$/TicTacToe/src/main/java/tictactoe/GameRun.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TicTacToe/src/main/java/tictactoe3Row/Key.java" beforeDir="false" afterPath="$PROJECT_DIR$/TicTacToe/src/main/java/tictactoe/Key.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TicTacToe/src/main/java/tictactoe3Row/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/TicTacToe/src/main/java/tictactoe/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TicTacToe/src/main/java/tictactoe3Row/Players.java" beforeDir="false" afterPath="$PROJECT_DIR$/TicTacToe/src/main/java/tictactoe/Players.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TicTacToe/src/main/java/tictactoe3Row/Rankingi.list" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TicTacToe/src/main/java/tictactoe3Row/Run.java" beforeDir="false" afterPath="$PROJECT_DIR$/TicTacToe/src/main/java/tictactoe/Run.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TicTacToe/src/main/java/tictactoe3Row/Visual.java" beforeDir="false" afterPath="$PROJECT_DIR$/TicTacToe/src/main/java/tictactoe/Visual.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TicTacToe/src/main/java/tictactoe3Row/WiningCalculation.java" beforeDir="false" afterPath="$PROJECT_DIR$/TicTacToe/src/main/java/tictactoe/WiningCalculation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TicTacToe/src/test/java/tictactoe3Row/ActualGameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/TicTacToe/src/test/java/tictactoe/ActualGameTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,11 +77,11 @@
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="tictactoe3Row.Main" />
+      <option name="MAIN_CLASS_NAME" value="tictactoe.Main" />
       <module name="Kodila-TicTacToe.TicTacToe.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tictactoe3Row.*" />
+          <option name="PATTERN" value="tictactoe.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -160,6 +166,8 @@
       <workItem from="1666438230199" duration="623000" />
       <workItem from="1666516887058" duration="1610000" />
       <workItem from="1666808159233" duration="1756000" />
+      <workItem from="1666893206514" duration="53000" />
+      <workItem from="1667670516219" duration="3886000" />
     </task>
     <task id="LOCAL-00001" summary="Commit">
       <created>1665691318368</created>
@@ -189,7 +197,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665693361595</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="12.1  Almost Finished Game ;)">
+      <created>1666893245738</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1666893245738</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -209,6 +224,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Commit" />
     <MESSAGE value="10.0  Almost Finished Game" />
-    <option name="LAST_COMMIT_MESSAGE" value="10.0  Almost Finished Game" />
+    <MESSAGE value="12.1  Almost Finished Game ;)" />
+    <option name="LAST_COMMIT_MESSAGE" value="12.1  Almost Finished Game ;)" />
   </component>
 </project>

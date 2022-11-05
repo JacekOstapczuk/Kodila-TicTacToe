@@ -1,7 +1,5 @@
 
-package tictactoe3Row;
-
-import java.util.Scanner;
+package tictactoe;
 
 public class Main {
 

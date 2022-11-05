@@ -1,5 +1,5 @@
 
-package tictactoe3Row;
+package tictactoe;
 
 public class GameEndingByWiningException extends Exception {
 
